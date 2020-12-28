@@ -1,1 +1,9 @@
-<a href="#" class="button is-primary">Bonjour</a>
+<ng-container *ngFor="let post of posts">
+  <app-card
+    [title]="post.title"
+    [username]="post.username"
+    [content]="post.content"
+    [imageUrl]="post.imageUrl"
+  >
+  </app-card>
+</ng-container>
